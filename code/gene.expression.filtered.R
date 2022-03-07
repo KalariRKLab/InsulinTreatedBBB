@@ -6,7 +6,7 @@ geneinfo <- data[,1:7]
 mat <- data[,-1:-7]
 
 # raw counts 
-raw <- read.table("insulin/merge.geneCount.MAPRSeq3.hg38.txt",header = T,sep="\t",stringsAsFactors = F)
+raw <- read.table("insulin/merged_genecounts.txt",header = T,sep="\t",stringsAsFactors = F)
 raw <- raw[,-1:-7]
 # filtering 
 # remove genes with group median raw counts < 32 in all samples 
